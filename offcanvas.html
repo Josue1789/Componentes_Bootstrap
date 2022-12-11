@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Offcanvas</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Offcanvas</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 38px;">Ejemplos</h4>
+
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                Abre desde la izquierda
+            </a>
+            <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <section class="offcanvas-header">
+                    <h5 class="text-black offcanvas-title" id="offcanvasExampleLabel">Microsoft Azure</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </section>
+                <section class="offcanvas-body">
+                    <section class="text-black">
+                        La plataforma Azure está compuesta por más de 200 productos y servicios en la nube diseñados para ayudarle a dar vida a nuevas soluciones que permitan resolver las dificultades actuales y crear el futuro. Cree, ejecute y administre aplicaciones en varias nubes, en el entorno local y en el perímetro, con las herramientas y los marcos que prefiera.
+                    </section>
+                    <section class="dropdown mt-3">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Algunos servicios
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Azure Virtual Machines</a></li>
+                        <li><a class="dropdown-item" href="#">SQL de Azure</a></li>
+                        <li><a class="dropdown-item" href="#">Azure Kubernetes Services(AKS)</a></li>
+                    </ul>
+                    </section>
+                </section>
+            </section>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Abre desde arriba</button>
+            <section class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <section class="text-black offcanvas-header">
+                    <h5 id="offcanvasTopLabel">Microsoft Azure</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </section>
+                <section class="text-black offcanvas-body">
+                    La plataforma Azure está compuesta por más de 200 productos y servicios en la nube diseñados para ayudarle a dar vida a nuevas soluciones que permitan resolver las dificultades actuales y crear el futuro. Cree, ejecute y administre aplicaciones en varias nubes, en el entorno local y en el perímetro, con las herramientas y los marcos que prefiera.
+                </section>
+            </section>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Abre desde la derecha</button>
+            <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <section class="text-black offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Microsoft Azure</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </section>
+                <section class="text-black offcanvas-body">
+                    La plataforma Azure está compuesta por más de 200 productos y servicios en la nube diseñados para ayudarle a dar vida a nuevas soluciones que permitan resolver las dificultades actuales y crear el futuro. Cree, ejecute y administre aplicaciones en varias nubes, en el entorno local y en el perímetro, con las herramientas y los marcos que prefiera.
+                </section>
+            </section>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Abre desde abajo</button>
+            <section class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <section class="offcanvas-header">
+                    <h5 class="text-black offcanvas-title" id="offcanvasBottomLabel">Microsoft Azure</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </section>
+                <section class="text-black offcanvas-body small">
+                    La plataforma Azure está compuesta por más de 200 productos y servicios en la nube diseñados para ayudarle a dar vida a nuevas soluciones que permitan resolver las dificultades actuales y crear el futuro. Cree, ejecute y administre aplicaciones en varias nubes, en el entorno local y en el perímetro, con las herramientas y los marcos que prefiera.
+                </section>
+            </section>
+
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

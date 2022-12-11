@@ -1,0 +1,100 @@
+.bg-image{
+   background-image: url("../asserts/imagenes/headerBG.jpg");
+   background-size: cover;
+}
+
+.bg-image1
+{
+  background-image: url("../asserts/imagenes/body.jpg");
+}
+
+.bg-image2{
+  background-image: url("../asserts/imagenes/body2.jpg");
+}
+
+.bg-image3{
+  background-image: url("../asserts/imagenes/body4.jpg");
+
+}
+
+.bg-image4{
+  background-image: url("../asserts/imagenes/body5.jpg");
+
+}
+
+.bg-image5{
+  background-image: url("../asserts/imagenes/body6.jpg");
+
+}
+
+.bg-image6{
+  background-image: url("../asserts/imagenes/body7.jpg");
+
+}
+
+.provincia1{
+  background-image: url("../asserts/imagenes/sanjose.jpg");
+
+}
+
+.provincia2{
+  background-image: url("../asserts/imagenes/alajuela.jpg");
+
+}
+
+.provincia3{
+  background-image: url("../asserts/imagenes/cartago.png");
+
+}
+
+.provincia4{
+  background-image: url("../asserts/imagenes/Heredia.jpg");
+
+}
+
+.provincia5{
+  background-image: url("../asserts/imagenes/guanacaste.jpg");
+
+}
+
+.provincia6{
+  background-image: url("../asserts/imagenes/Puntarenas.jpg");
+
+}
+
+.provincia7{
+  background-image: url("../asserts/imagenes/limon.jpg");
+
+}
+
+
+.color1 {
+  --gradient: linear-gradient(to left top, #6699CC 10%, #ffdbc4 90%) !important;
+  color: #6699CC  
+}
+
+.card {
+  background: #222;
+  border: 1px solid white;
+  margin-bottom: 2rem;
+}
+  
+.color1 {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source:  var(--gradient) !important; 
+  text-decoration: none;
+  transition: all .4s ease;
+}
+  
+.color1:hover, .color1:focus {
+  background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}

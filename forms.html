@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Forms</title>
+    </head>
+    <body class="bg-image3 text-white">
+
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Forms</h1>
+        </header>
+
+        <section class="bg-image2 p-5 text-center bg-light d-grid gap-3">
+            <h1 class="mb-3">Form Control</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <section class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@outlook.com">
+            </section>
+            <section class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Area de Texto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </section>
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <section class="mb-3">
+                <label for="formFileMultiple" class="form-label">Ejemplo para agregar multiples archivos</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </section>
+        </section>
+
+
+        <section class="bg-image1 p-5 text-center bg-light d-grid gap-3 " style="margin-top: 58px;">
+            <h1 class="mb-3">Select</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <label for="formFileMultiple" class="form-label">Barra habilitada</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Abrir este menú</option>
+                <option value="1">Corsair</option>
+                <option value="2">Razer</option>
+                <option value="3">HyperX</option>
+              </select>
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <label class="form-label">Barra deshabilitada</label>
+            <select class="form-select" aria-label="Disabled select example" disabled>
+                <option selected>Menú deshabilitado</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>      
+        </section>
+
+
+        <section class="bg-image2 p-5 text-center bg-light d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Checks and radios</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <label class="form-label">Checks</label>
+            <section>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Pizza
+                </label>
+              </section>
+              <section>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Hamburguesas
+                </label>
+              </section>
+   
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <label class="form-label">Radios</label> 
+            <section>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Si
+                </label>
+            </section>
+            <section>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  No
+                </label>
+              </section>
+        </section>
+
+
+        <section class="bg-image1 p-5 text-center bg-light d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Range</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <label class="form-label">Ejemplo de Range habilitado</label>
+            <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <label for="disabledRange" class="form-label">Range deshabilitado</label>
+            <input type="range" class="form-range" id="disabledRange" disabled>
+        </section>
+
+
+        <section class="bg-image2 p-5 text-center bg-light d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Input Group</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <label class="form-label">Multiple inputs</label>
+            <section class="input-group">
+                <span class="input-group-text">Nombre y apellido</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+            </section>
+   
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <label class="form-label">Multiple addons</label> 
+            <section class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            </section>
+              
+            <section class="input-group">
+                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+            </section>
+        </section>
+
+
+        <section class="bg-image1 p-5 text-center bg-light d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Floating Labels</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <label for="formFileMultiple" class="form-label">Textareas</label>
+            <section class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comentarios</label>
+              </section>
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <label for="formFileMultiple" class="form-label">Selects</label> 
+            <section class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Menu</option>
+                  <option value="1">Pizza</option>
+                  <option value="2">Hamburguesa</option>
+                  <option value="3">Tacos</option>
+                </select>
+                <label for="floatingSelect">Seleccione que desea comer</label>
+              </section>
+        </section>
+
+
+        <section class="text-black p-5 text-center bg-light d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Validation</h1>
+            <h4 class="mb-3">Ejemplo 1</h4>
+            <label for="formFileMultiple" class="form-label">Browser defaults</label>
+            <form class="row g-3">
+                <section class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="" required>
+                </section>
+                <section class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationDefault02" value="" required>
+                </section>
+                <section class="col-md-4">
+                  <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                  <section class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                  </section>
+                </section>
+                <section class="col-md-6">
+                  <label for="validationDefault03" class="form-label">Cantón</label>
+                  <input type="text" class="form-control" id="validationDefault03" required>
+                </section>
+                <section class="col-md-3">
+                  <label for="validationDefault04" class="form-label">Provincia</label>
+                  <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">...</option>
+                    <option>San Jose</option>
+                    <option>Heredia</option>
+                    <option>Alajuela</option>
+                    <option>Guanacaste</option>
+                    <option>Puntarenas</option>
+                    <option>Limon</option>
+                    <option>Cartago</option>
+                  </select>
+                </section>
+                <section class="col-md-3">
+                  <label for="validationDefault05" class="form-label">Codigo Postal</label>
+                  <input type="text" class="form-control" id="validationDefault05" required>
+                </section>
+                <section class="col-12">
+                  <section class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      Acepto terminos y condiciones
+                    </label>
+                  </section>
+                </section>
+                <section class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                </section>
+            </form>
+   
+            <h4 class="mb-3">Ejemplo 2</h4>
+            <label for="formFileMultiple" class="form-label">Supported elements</label>
+            <form class="was-validated">
+                <section class="mb-3">
+                  <label for="validationTextarea" class="form-label">Textarea</label>
+                  <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Por favor agregue texto antes de continuar" required></textarea>
+                </section>
+              
+                <section class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                  <label class="form-check-label" for="validationFormCheck1">Por favor sleccione este checkbox</label>
+                  <section class="invalid-feedback">Espacio obligatorio</section>
+                </section>
+              
+                <section class="form-check">
+                  <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                  <label class="form-check-label" for="validationFormCheck2">Seleccione este radio</label>
+                </section>
+                <section class="form-check mb-3">
+                  <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                  <label class="form-check-label" for="validationFormCheck3">O seleccione este otro radio</label>
+                  <section class="invalid-feedback">Por favor seleccione una opcion</section>
+                </section>
+              
+                <section class="mb-3">
+                  <select class="form-select" required aria-label="select example">
+                    <option value="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <section class="invalid-feedback">Por favor seleccione una opcion</section>
+                </section>
+              
+                <section class="mb-3">
+                  <input type="file" class="form-control" aria-label="file example" required>
+                  <section class="invalid-feedback">Por favor añadir un archivo</section>
+                </section>
+              
+                <section class="mb-3">
+                  <button class="btn btn-primary" type="submit" disabled>Enviar</button>
+                </section>
+              </form>
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

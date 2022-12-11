@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Collapse</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Collapse</h1>
+        </header>
+
+        <section class="bg-image2 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>One target</h5>
+
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Azure Private Endpoint
+                </a>
+            </p>
+
+            <section class="collapse" id="collapseExample">
+                <section class="card card-body bg-image2">
+                    Un punto de conexión privado es una interfaz de red que utiliza una dirección IP privada de su red virtual. Esta interfaz de red lo conecta de forma privada y segura a un servicio que funciona con Azure Private Link. Al habilitar un punto final privado, está incorporando el servicio a su red virtual.
+                </section>
+            </section>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Multiple targets</h5>
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Public Load Balancer</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Internal Load Balancer</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Abrir/cerrar ambos</button>
+            </p>
+
+            <section class="row">
+
+                <section class="col">
+                  <section class="collapse multi-collapse" id="multiCollapseExample1">
+                    <section class="card card-body">
+                        Puede proporcionar conexiones salientes para máquinas virtuales (VM) dentro de su red virtual. Estas conexiones se logran traduciendo sus direcciones IP privadas a direcciones IP públicas. Los equilibradores de carga públicos se utilizan para equilibrar la carga del tráfico de Internet en sus máquinas virtuales.
+                    </section>
+                  </section>
+                </section>
+
+                <section class="col">
+                  <section class="collapse multi-collapse" id="multiCollapseExample2">
+                    <section class="card card-body">
+                        Se utiliza cuando se necesitan direcciones IP privadas solo en la interfaz. Los equilibradores de carga internos se utilizan para equilibrar la carga del tráfico dentro de una red virtual. Se puede acceder a una interfaz de equilibrador de carga desde una red local en un escenario híbrido.
+                    </section>
+                  </section>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

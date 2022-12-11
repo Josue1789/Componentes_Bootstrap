@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Dropdowns</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Dropdowns</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Single button</h5>
+
+            <section class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Virual Machine optiones
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="https://azure.microsoft.com/en-us/solutions/windows-server/#overview">Windows</a></li>
+                  <li><a class="dropdown-item" href="https://azure.microsoft.com/en-us/products/virtual-machines/linux/">Linux</a></li>
+                </ul>
+            </section>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Split button</h5>
+            <section class="btn-group">
+                <button type="button" class="btn btn-info">Microsoft Azure</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/virtual-machines/">Virtual Machines</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql">Azure SQL</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/aks/">Azure Kubernetes Service</a></li>
+                </ul>
+            </section>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 3</h4>
+            <h5>Different directions</h5>
+            <section class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Abajo
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/virtual-machines/">Virtual Machines</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql">Azure SQL</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/aks/">Azure Kubernetes Service</a></li>
+                </ul>
+              </section>
+              
+              <section class="btn-group dropstart">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Izquierda
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/virtual-machines/">Virtual Machines</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql">Azure SQL</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/aks/">Azure Kubernetes Service</a></li>
+                </ul>
+              </section>
+              
+              <section class="btn-group dropend">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Derecha
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/virtual-machines/">Virtual Machines</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql">Azure SQL</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/aks/">Azure Kubernetes Service</a></li>
+                </ul>
+              </section>
+              
+              <section class="btn-group dropup">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Arriba
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/virtual-machines/">Virtual Machines</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql">Azure SQL</a></li>
+                  <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/aks/">Azure Kubernetes Service</a></li>
+                </ul>
+              </section>
+              
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

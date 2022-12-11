@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Accordions</title>
+    </head>
+    
+    <body class="bg-dark text-white bg-image2">
+          <main class="p-5 text-center">
+            <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+              <h1 class="mb-3">Ejemplos sobre Accordions</h1>
+            </header> 
+            
+            <h4 class="mb-3">Ejemplo 1 (flush)</h4>
+            <h5> Metodos de balancero de Azure</h5>
+            <section class="accordion accordion-flush" id="accordionFlushExample">
+
+                <section class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Azure Load Balancer
+                    </button>
+                  </h2>
+                  <section id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <section class="accordion-body">Azure Load Balancer opera en la capa 4 del modelo Interconexión de sistemas abiertos (OSI). Es el único punto de contacto de los clientes. Load Balancer distribuye flujos de entrada que llegan al front-end del equilibrador de carga a las instancias del grupo de back-end. </section>
+                  </section>
+                </section>
+
+                <section class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Azure Application Gateway
+                    </button>
+                  </h2>
+                  <section id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <section class="accordion-body">Azure Application Gateway es un equilibrador de carga de tráfico web que permite administrar el tráfico a las aplicaciones web. Application Gateway puede tomar decisiones de enrutamiento basadas en atributos adicionales de una solicitud HTTP, por ejemplo los encabezados de host o la ruta de acceso del URI.</section>
+                  </section>
+                </section>
+
+                <section class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Azure Front Door
+                    </button>
+                  </h2>
+                  <section id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <section class="accordion-body">Azure Front Door es la nube moderna de Microsoft Content Delivery Network (CDN) que proporciona acceso rápido, confiable y seguro entre los usuarios y el contenido web estático y dinámico de las aplicaciones en todo el mundo.</section>
+                  </section>
+                </section>
+
+            </section>
+           
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2 (Siempre abierto)</h4>
+            <h5> Azure DNS </h5>
+
+            <section class="accordion" id="accordionPanelsStayOpenExample">
+
+                <section class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Azure private DNS zone
+                    </button>
+                  </h2>
+                  <section id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <section class="accordion-body">
+                        Azure Private DNS proporciona un servicio de DNS seguro y confiable para administrar y resolver nombres de dominio en una red virtual sin necesidad de agregar una solución de DNS personalizada. Al usar zonas DNS privadas, puede usar sus propios nombres de dominio personalizados en lugar de los nombres proporcionados por Azure disponibles en la actualidad.
+                    </section>
+                  </section>
+                </section>
+
+                <section class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Azure Public DNS
+                    </button>
+                  </h2>
+                  <section id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <section class="accordion-body">
+                        Azure DNS es un servicio de alojamiento para dominios DNS que proporciona resolución de nombres mediante la infraestructura de Microsoft Azure. Al hospedar sus dominios en Azure, puede administrar sus registros DNS usando las mismas credenciales, API, herramientas y facturación que sus otros servicios de Azure.
+                    </section>
+                  </section>
+                </section>
+
+              </section>
+            
+          </main>
+
+        <section class="p-5 text-center">
+          <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

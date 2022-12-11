@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Scrollspy</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Scrollspy</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Navbar</h5>
+            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                <a class="navbar-brand" href="#">Opciones de equilibrio de carga</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Front Door</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Traffic Manager</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mas opciones</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#scrollspyHeading3">Application Gateway</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading4">Azure Load Balancer</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </nav>
+            <section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class=" scrollspy-example" tabindex="0"  style="padding:100px 20px;">
+                <h4 id="scrollspyHeading1" style="margin-top: 58px;">Front Door</h4>
+                <p>Es una red de entrega de aplicaciones que proporciona equilibrio de carga global y servicio de aceleración de sitios para aplicaciones web. Ofrece capacidades de capa 7 para su aplicación, como descarga de SSL, enrutamiento basado en ruta, conmutación por error rápida, almacenamiento en caché, etc. para mejorar el rendimiento y la alta disponibilidad de sus aplicaciones.</p>
+            </section>
+            <section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class=" scrollspy-example" tabindex="0"  style="padding:100px 20px;">
+                <h4 id="scrollspyHeading2">Traffic Manager</h4>
+                <p>Es un equilibrador de carga de tráfico basado en DNS que le permite distribuir el tráfico de manera óptima a los servicios en las regiones globales de Azure, al tiempo que proporciona alta disponibilidad y capacidad de respuesta. Dado que Traffic Manager es un servicio de equilibrio de carga basado en DNS, solo equilibra la carga a nivel de dominio. Por ese motivo, no puede conmutar por error tan rápido como Front Door, debido a los desafíos comunes relacionados con el almacenamiento en caché de DNS y los sistemas que no respetan los TTL de DNS.</p>
+            </section>
+            <section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class=" scrollspy-example" tabindex="0"  style="padding:100px 20px;">   
+                <h4 id="scrollspyHeading3">Application Gateway</h4>
+                <p>Proporciona un controlador de entrega de aplicaciones (ADC) como un servicio, que ofrece varias capacidades de equilibrio de carga de capa 7. Úselo para optimizar la productividad de la granja de servidores web al descargar la terminación SSL con uso intensivo de la CPU en la puerta de enlace.</p>
+            </section > 
+            <section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class=" scrollspy-example" tabindex="0"  style="padding:100px 20px;">
+                <h4 id="scrollspyHeading4">Azure Load Balancer </h4>
+                <p>Es un servicio de equilibrio de carga de nivel 4 (entrante y saliente) de alto rendimiento y latencia ultrabaja para todos los protocolos UDP y TCP. Está diseñado para manejar millones de solicitudes por segundo mientras garantiza que su solución esté altamente disponible. Azure Load Balancer tiene redundancia de zona, lo que garantiza una alta disponibilidad en las zonas de disponibilidad.</p>
+            </section>
+
+        </section>
+
+        <section class="bg-image2 rounded border p-5 text-center gap-3" style="margin-top: 58px;">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>List-group</h5>
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Front Door</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Traffic Manager</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Application Gateway</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Azure Load Balancer</a>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0"  style="padding:100px 20px;">
+                <h4 id="list-item-1">Front Door</h4>
+                <p>Es una red de entrega de aplicaciones que proporciona equilibrio de carga global y servicio de aceleración de sitios para aplicaciones web. Ofrece capacidades de capa 7 para su aplicación, como descarga de SSL, enrutamiento basado en ruta, conmutación por error rápida, almacenamiento en caché, etc. para mejorar el rendimiento y la alta disponibilidad de sus aplicaciones.</p>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="padding:100px 20px;">
+                <h4 id="list-item-2">Traffic Manager</h4>
+                <p>Es un equilibrador de carga de tráfico basado en DNS que le permite distribuir el tráfico de manera óptima a los servicios en las regiones globales de Azure, al tiempo que proporciona alta disponibilidad y capacidad de respuesta. Dado que Traffic Manager es un servicio de equilibrio de carga basado en DNS, solo equilibra la carga a nivel de dominio. Por ese motivo, no puede conmutar por error tan rápido como Front Door, debido a los desafíos comunes relacionados con el almacenamiento en caché de DNS y los sistemas que no respetan los TTL de DNS.</p>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="padding:100px 20px;">
+                <h4 id="list-item-3">Application Gateway</h4>
+                <p>Proporciona un controlador de entrega de aplicaciones (ADC) como un servicio, que ofrece varias capacidades de equilibrio de carga de capa 7. Úselo para optimizar la productividad de la granja de servidores web al descargar la terminación SSL con uso intensivo de la CPU en la puerta de enlace.</p>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="padding:100px 20px;">
+                <h4 id="list-item-4">Azure Load Balancer</h4>
+                <p>Es un servicio de equilibrio de carga de nivel 4 (entrante y saliente) de alto rendimiento y latencia ultrabaja para todos los protocolos UDP y TCP. Está diseñado para manejar millones de solicitudes por segundo mientras garantiza que su solución esté altamente disponible. Azure Load Balancer tiene redundancia de zona, lo que garantiza una alta disponibilidad en las zonas de disponibilidad.</p>
+            </div>
+                
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+        <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example'
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Modal</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Modal</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Basic Modal</h5>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Click aqui para mas informacion
+            </button>
+              
+            <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <section class="modal-dialog">
+                    <section class="modal-content">
+                        <section class="modal-header">
+                        <h5 class="text-black modal-title" id="exampleModalLabel">Microsoft Azure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </section>
+                        <section class="text-black modal-body">
+                            <p>La plataforma Azure está compuesta por más de 200 productos y servicios en la nube diseñados para ayudarle a dar vida a nuevas soluciones que permitan resolver las dificultades actuales y crear el futuro. Cree, ejecute y administre aplicaciones en varias nubes, en el entorno local y en el perímetro, con las herramientas y los marcos que prefiera.</p>
+                        </section>
+                        <section class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Tooltip in a Modal</h5>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testmodal">
+                Click aqui para mas informacion
+            </button>
+            
+            <section class="modal fade" id="testmodal" tabindex="-1" aria-labelledby="testmodalLabel" aria-hidden="true">
+                <section class="modal-dialog">
+                    <section class="modal-content">
+                        <section class="modal-header">
+                        <h5 class="text-black  modal-title" id="testmodal">Microsoft Azure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </section>
+                        <section class="text-black  modal-body">
+                            <p>Cree soluciones en la nube con una cuenta gratuita de <a href="#" class="tooltip-test" title="Empiece Gratis">Azure</a>.</p>
+                        </section>
+                        <section class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Popover in a Modal</h5>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popovermodal">
+                Microsoft Azure
+            </button>
+            
+            <section class="modal fade" id="popovermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <section class="modal-dialog">
+                    <section class="modal-content">
+                        <section class="modal-header">
+                        <h5 class="text-black modal-title" id="exampleModalLabel">Microsoft Azure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </section>
+                        <section class="text-black modal-body">
+                            <p>La plataforma Azure está compuesta por más de 200 productos y servicios en la nube diseñados para ayudarle a dar vida a nuevas soluciones que permitan resolver las dificultades actuales y crear el futuro. <a href="#" role="button" class=" btn btn-primary popover-test" data-bs-toggle="popover"data-bs-content="Cree, ejecute y administre aplicaciones en varias nubes, en el entorno local y en el perímetro, con las herramientas y los marcos que prefiera.">Click aqui para mas info</a></p>
+                        </section>
+                        <section class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+        
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+    </body>
+</html>

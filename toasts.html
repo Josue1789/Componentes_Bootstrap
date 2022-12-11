@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Toasts</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Toasts</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Basic Toasts</h5>
+            <button type="button" class="btn btn-primary" id="liveToastBtn">Activar manualemnte el toast</button>
+
+            <section class=" toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+              <section id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <section class="toast-header">
+                  <strong class="me-auto">Notificaciones</strong>
+                  <small>Hace 11 minutos</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </section>
+                <section class="text-black toast-body">
+                  Tiene un nuevo correo en su bandeja de entrada
+                </section>
+                
+              </section>
+            </section>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Stacking</h5>
+            <section class="container mt-3">
+                <button type="button" class="btn btn-primary" id="toastbtn">Activar manualemnte el toast</button>
+                <section class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <section class="toast-header">
+                      <strong class="me-auto">Notificaciones</strong>
+                      <small class="text-muted">Ahora</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </section>
+                    <section class="text-black toast-body">
+                      Virus detectado.
+                    </section>
+                </section>
+
+                <section class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <section class="toast-header">
+                      <strong class="me-auto">Notificaciones</strong>
+                      <small class="text-muted">Hace 2 segundos</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </section>
+                    <div class="text-black toast-body">
+                      La descarga se ha completado
+                    </section>
+                  </section>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+        <script>
+            var toastTrigger = document.getElementById('liveToastBtn')
+            var toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+            }
+        </script>
+
+        <script>
+            document.getElementById("toastbtn").onclick = function() {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function(toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show()) 
+            }
+        </script>
+
+    </body>
+</html>
