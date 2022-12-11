@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        
+        <title>Buttons</title>
+    </head>
+    
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Buttons</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h1 class="mb-3">Buttons</h1>
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Outline Buttons</h5>
+
+            <button type="button" class="btn btn-outline-primary">Siguiente</button>
+            <button type="button" class="btn btn-outline-success">Continuar</button>
+            <button type="button" class="btn btn-outline-danger">Peligro</button>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Disabled Buttons</h5>
+            <button type="button" class="btn btn-primary" disabled>No disponible</button>
+            <button type="button" class="btn btn-success" disabled>No disponible</button>
+            <button type="button" class="btn btn-danger" disabled>No disponible</button>
+
+
+        </section>
+
+        <section class="bg-image2 rounded border p-5 text-center gap-3" style="margin-top: 58px;">
+
+            <h1 class="mb-3">Button group</h1>
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Checkbox buttons group</h5>
+            <section class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck1">Site-to-Site</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck2">Point-to-Site</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-light" for="btncheck3">ExpressRoute</label>
+            </section>
+                
+            <h4 class="mb-3 " style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Radio buttons group</h5>
+            <section class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-light" for="btnradio1">Site-to-Site</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio2">Point-to-Site</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio3">ExpressRoute</label>
+            </section>
+
+            <h4 class="mb-3 " style="margin-top: 58px;">Ejemplo 3</h4>
+            <h5>Nesting</h5>
+            <section class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">2</button>
+              
+                <section class="btn-group" role="group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Connectivity services
+                  </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways">Azure VPN gateway</a></li>
+                        <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways">ExpressRoute gateway</a></li>
+                        <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about">Virtual WAN</a></li>
+                        <li><a class="dropdown-item" href="https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-overview">Virtual network NAT Gateway</a></li>
+                    </ul>
+                </section>
+            </section>
+                
+        </section>
+
+        <section class="bg-image1 rounded border p-5 text-center gap-3" style="margin-top: 58px;">
+
+            <h1 class="mb-3">Close Button</h1>
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Disabled state</h5>
+            <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
+                
+            <h4 class="mb-3 " style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>White close button</h5>
+            <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

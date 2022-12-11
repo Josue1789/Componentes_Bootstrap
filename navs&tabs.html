@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Navs and tabs</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Navs y tabs</h1>
+        </header>
+
+        <section class="rounded border p-5 text-center ">
+            <h1 class="mb-3">Nav</h1>
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Horizontal alignment</h5>
+
+            <nav class="bg-white nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-dotnetcore?tabs=net60&pivots=development-environment-vs">ASP.NET</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-nodejs?tabs=windows&pivots=development-environment-vscode">Node.js</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-php?tabs=cli&pivots=platform-linux">PHP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-java?tabs=javase&pivots=platform-linux-development-environment-maven" tabindex="-1" aria-disabled="true">Java</a>
+                </li>
+            </nav>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Vertical alignment</h5>
+            <nav class="bg-white nav flex-column">
+                <a class="nav-link active" aria-current="page" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli">Python</a>
+                <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-ruby?tabs=cli">Ruby</a>
+                <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-wordpress">WordPress</a>
+                <a class="nav-link disabled" href="https://learn.microsoft.com/es-es/azure/app-service/quickstart-html" tabindex="-1" aria-disabled="true">Sitio HTML estático</a>
+            </nav>
+
+
+        </section>
+
+        <section class="rounded border p-5 text-center gap-3" style="margin-top: 58px;">
+
+            <h1 class="mb-3">Tabs</h1>
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <ul class="bg-white nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction">Blob Storage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/virtual-machines/">Virtual Machine</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/app-service/">App Service</a>
+                </li>
+            </ul>
+                
+            <h4 class="mb-3 " style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Tabs with dropdowns</h5>
+            <ul class="bg-white nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Guia de inicio rapido</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutoriales</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/app-service/app-service-web-tutorial-custom-domain?tabs=a%2Cazurecli">Asignacion de dominios personalizados</a></li>
+                    <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/app-service/configure-ssl-bindings">Domio Seguro con SSL/TLS</a></li>
+                    <li><a class="dropdown-item" href="https://learn.microsoft.com/es-es/azure/app-service/tutorial-dotnetcore-sqldb-app?tabs=azure-portal%2Cvisualstudio-deploy%2Cdeploy-instructions-azure-portal%2Cazure-portal-logs%2Cazure-portal-resources">Aplication con base de datos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://learn.microsoft.com/es-es/azure/app-service/overview-hosting-plans">Conceptos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Referencia</a>
+                </li>
+            </ul>
+                
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+    </body>
+</html>

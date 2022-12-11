@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script  src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Popovers</title>
+    </head>
+    <body class="bg-image3 text-white">
+        <header class="p-5 text-center d-grid gap-3" style="margin-top: 58px;">
+            <h1 class="mb-3">Ejemplos de Popovers</h1>
+        </header>
+
+        <section class="bg-image1 rounded border p-5 text-center ">
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 1</h4>
+            <h5>Basic Popover</h5>
+            <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" data-bs-content="Azure Traffic Manager es un equilibrador de carga de tráfico basado en DNS. Este servicio le permite distribuir el tráfico a sus aplicaciones públicas en las regiones globales de Azure. Traffic Manager también proporciona a sus terminales públicos alta disponibilidad y capacidad de respuesta rápida.">¿Que es Traffic Manager?</button>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 2</h4>
+            <h5>Four directions</h5>
+            <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Firewall">
+                Cisco
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Firewall">
+                Fortinet
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Firewall">
+                Palo Alto
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Firewall">
+                SonicWall
+            </button>
+
+            <h4 class="mb-3" style="margin-top: 58px;">Ejemplo 3</h4>
+            <h5>Dismiss on next click</h5>
+            <a tabindex="0" class="btn btn-lg btn-primary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="es “la entrega bajo demanda de recursos de TI a través de Internet con precios de pago por uso. En lugar de comprar, poseer y mantener servidores y centros de datos físicos, puede acceder a servicios tecnológicos, como poder de cómputo, almacenamiento y bases de datos, según sea necesario, de un proveedor de la nube”.">Que es la nube?</a>
+
+
+        </section>
+
+        <section class="p-5 text-center">
+            <a href="index.html" class="color1 btn mr-2"><i class="fas fa-link"></i> Click aqui para volver al inicio</a>
+        </section>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+    </body>
+</html>
